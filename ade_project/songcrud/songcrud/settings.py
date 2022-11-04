@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     #application created by me
     'musicapp',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
