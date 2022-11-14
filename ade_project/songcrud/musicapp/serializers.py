@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Song, Artiste
+from .models import Song, Artiste, Lyric
 
 #create serializers for song
 class SongSerializer(serializers.ModelSerializer):
@@ -22,3 +22,9 @@ class ArtisteSerializer(serializers.ModelSerializer):
             "last_name",
             "age"
         )
+class LyricSerializer(serializers.ModelSerializer): 
+    class Meta:
+        model = LyricSerializerfields =(
+            "song_id",
+            "content"
+        )    
